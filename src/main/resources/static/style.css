@@ -1,19 +1,7 @@
 body {
-
     margin: 0;
-
     font-family: Poppins;
-
-    background-image: url("bunga.png");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-attachment: fixed;
-
     text-align: center;
-
 }
 
 body::before {
@@ -33,6 +21,24 @@ body::before {
 
     z-index: 0;
 
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background-image: url("bunga.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+html, body {
+    overflow-x: hidden;
 }
 
 
