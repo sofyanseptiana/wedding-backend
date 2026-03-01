@@ -1,7 +1,22 @@
 var musik;
 var nyala = true;
 
+function ambilNamaTamu() {
+    var params = new URLSearchParams(window.location.search);
+    var nama = params.get("nama");
+    return nama ? decodeURIComponent(nama) : null;
+}
+
 window.onload = function () {
+
+    var namaTamu = ambilNamaTamu();
+
+    if (namaTamu) {
+        var el = document.getElementById("tamu");
+        if (el) {
+            el.innerHTML = namaTamu;
+        }
+    }
 
     musik = document.getElementById("musik");
 
