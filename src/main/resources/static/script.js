@@ -50,11 +50,11 @@ function toggleMusik() {
 
     if (nyala) {
         musik.pause();
-        document.getElementById("musikTombol").innerHTML = "🔇";
+        document.getElementById("musikTombol").innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
         nyala = false;
     } else {
         musik.play();
-        document.getElementById("musikTombol").innerHTML = "🔊";
+        document.getElementById("musikTombol").innerHTML = '<i class="fa-solid fa-volume-high"></i>';
         nyala = true;
     }
 }
