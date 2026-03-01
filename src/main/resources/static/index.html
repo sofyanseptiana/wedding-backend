@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Wedding</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- COVER -->
+
+    <div id="cover">
+
+        <h1 class="fade">The Wedding Of</h1>
+
+        <h2 class="fade">Nikko & Lala</h2>
+
+        <p>
+
+            10 Oktober 2026
+
+        </p>
+
+        <p>
+
+            Kepada:
+
+        </p>
+
+        <h3 id="tamu" class="fade">
+
+            Tamu Undangan
+
+        </h3>
+
+        <br>
+
+        <button class="tombolBuka fade" onclick="buka()">
+
+            Buka Undangan
+
+        </button>
+
+    </div>
+
+
+
+
+    <!-- ISI -->
+
+    <div id="isi" style="display:none;">
+
+        <section id="home">
+
+            <h1 class="fade">
+
+                Nikko & Lala
+
+            </h1>
+
+            <p class="fade">
+
+                Kami akan menikah
+
+            </p>
+
+        </section>
+
+        <section id="pengantin">
+
+            <h2 class="fade">Pengantin</h2>
+
+            <br>
+
+            <img src="pria.jpg" class="foto">
+
+            <h3 class="fade">Nikko</h3>
+
+            <p class="fade">
+
+                Putra dari
+
+                <br>
+
+                Bapak A
+
+                <br>
+
+                Ibu A
+
+            </p>
+
+            <br><br>
+
+            <img src="wanita.jpg" class="foto">
+
+            <h3 class="fade">Lala</h3>
+
+            <p class="fade">
+
+                Putri dari
+
+                <br>
+
+                Bapak B
+
+                <br>
+
+                Ibu B
+
+            </p>
+
+        </section>
+
+
+        <section id="count">
+
+            <h2 class="fade">
+
+                Countdown
+
+            </h2>
+
+            <h1 id="countdown" class="fade">
+
+                Loading
+
+            </h1>
+
+        </section>
+
+
+
+
+        <section id="tanggal">
+
+            <h2 class="fade">
+
+                Tanggal
+
+            </h2>
+
+            <p class="fade">
+
+                10 Oktober 2026
+
+            </p>
+
+        </section>
+
+
+
+
+        <section id="lokasi">
+
+            <h2 class="fade">
+
+                Lokasi
+
+            </h2>
+
+            <p class="fade">
+
+                Gedung Serbaguna
+
+            </p>
+
+        </section>
+
+
+
+
+        <section id="galeri">
+
+            <h2 class="fade">
+
+                Galeri
+
+            </h2>
+
+            <img src="foto.jpg" width="300">
+
+        </section>
+
+
+
+
+        <section id="ucapan">
+
+            <h2 class="fade">
+
+                Ucapan
+
+            </h2>
+
+            <input placeholder="Nama">
+
+            <br><br>
+
+            <textarea>
+
+</textarea>
+
+            <br><br>
+
+            <button>
+
+                Kirim
+
+            </button>
+
+            <div id="daftarUcapan">
+
+                Loading ucapan...
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+    <div id="musikTombol">
+        🔊
+    </div>
+
+    <audio id="musik" loop>
+        <source src="musik.mp3">
+    </audio>
+
+
+    <div class="bunga-container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
