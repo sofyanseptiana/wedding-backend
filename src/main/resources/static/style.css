@@ -447,3 +447,40 @@ h1 {
     }
 
 }
+
+/*style untuk menampilkan foto galeri */
+/* GRID */
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeri-grid img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeri-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+}

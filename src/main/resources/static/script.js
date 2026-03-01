@@ -179,4 +179,17 @@ function countdown() {
     }
 }
 
+function bukaFoto(img) {
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightboxImg");
+
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+}
+
+function tutupFoto() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+countdown();
 setInterval(countdown, 1000);
